@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s all;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  display: inline-block;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #674baf;
+  position: relative;
+  padding-top: 18rem;
+}
+.header__logo-box {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+.header__content {
+  display: flex;
+  /* align-items: center; */
+  gap: 3rem;
+  padding: 0 10rem;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.header__content-text {
+  padding-top: 5rem;
+}
+.header__content-heading {
+  font-size: 3.6rem;
+  padding-right: 20rem;
+  line-height: 1.4;
+}
+.header__content-paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #f4f4f4;
+  line-height: 1.4;
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #674baf;
+  padding: 1.6rem 5.6rem;
+  border-radius: 50rem;
+  font-size: 1.6rem;
+}
+.btn:hover {
+  color: #f4f4f4;
+  background-color: #e882e8;
+}
+/* Social media Styling */
+.social {
+  position: absolute;
+  bottom: 4rem;
+  right: 6rem;
+}
+.social__list {
+  display: flex;
+  gap: 1.8rem;
+}
+.social__link {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0.8rem; */
+  width: rem;
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #fff;
+}
+.social__icon {
+  font-size: 1.8rem;
+}
+.social__link:hover {
+  border-color: #e882e8;
+  color: #e882e8;
+}
+
+/* Media query */
+@media (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+  .header__content-img {
+    width: 50rem;
+  }
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__content-text {
+    text-align: center;
+    padding: 0;
+    /* margin-bottom: 5rem; */
+  }
+  .header__content-heading {
+    padding: 0;
+  }
+  .social {
+    margin-top: 7.2rem;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    padding: 1.6rem 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: #674baf;
+  }
+  .header__content-img {
+    width: 40rem;
+  }
+  .header__logo {
+    width: 20rem;
+  }
+}
