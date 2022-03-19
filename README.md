@@ -23,9 +23,9 @@ The challenge was to build a simple component using Frontend technologies(Mainly
 
 ### links
 
-Solution URL: [Click Here]()
+Solution URL: [Click Here](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-using-htmlcss-NwXw_GOGM)
 
-Live Preview: [Click Here]()
+Live Preview: [Click Here](https://mohammed997732.github.io/Huddle-landing-page-with-single-introductory-section/)
 
 ### Built with
 
